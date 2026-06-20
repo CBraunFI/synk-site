@@ -137,7 +137,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .bigimage img{width:100%;height:min(64vh,600px);object-fit:cover;display:block}
 .bigimage figcaption{position:absolute;left:30px;bottom:26px;color:#fff;font-size:.86rem;font-weight:500;text-shadow:0 1px 14px rgba(0,0,0,.55);max-width:30ch}
 /* TRUST */
-.trust p.kick{text-align:left;color:var(--muted);font-weight:500;font-size:.92rem;margin-bottom:48px}
+.trust p.kick{text-align:left;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-weight:700;font-size:.72rem;margin-bottom:40px}
 .logos{display:grid;grid-template-columns:repeat(4,1fr);gap:18px 24px;align-items:center}
 @media(max-width:760px){.logos{grid-template-columns:repeat(2,1fr);gap:16px 18px}}
 .logos .lg{display:flex;align-items:center;justify-content:center;height:160px}
@@ -281,7 +281,7 @@ footer.site a:hover{color:var(--petrol)}
 @media(max-width:760px){.kpiband .wrap{grid-template-columns:1fr 1fr;gap:30px 24px}}
 .kpi{text-align:left}
 .kpi .num{font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:700;line-height:1;letter-spacing:-.02em}
-.kpi .lab{font-size:.86rem;color:rgba(255,255,255,.78);margin-top:9px;line-height:1.4}
+.kpi .lab{font-size:.88rem;color:rgba(255,255,255,.92);margin-top:9px;line-height:1.4}
 /* PURPOSE (home variant) */
 .purpose .eyebrow{text-align:center}
 .purpose .src{font-size:.82rem;color:var(--muted);margin-top:1.4em}
@@ -298,3 +298,38 @@ footer.site a:hover{color:var(--petrol)}
 /* CONTACT PROMISE */
 .contact .promise{display:inline-flex;align-items:center;gap:9px;margin-top:24px;font-size:.9rem;color:var(--ink-soft);font-weight:500}
 .contact .promise .tick{width:20px;height:20px;border-radius:50%;background:var(--accent);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:.7rem;flex:none}
+/* FOOTER SOCIAL INLINE */
+.fbar a{display:inline;color:var(--muted)}
+.fbar a:hover{color:var(--petrol)}
+/* HOMEPAGE: engere Abstände */
+.home section{padding:80px 0}
+.home section.hero{padding:96px 0 104px}
+/* LEADA APP MOCKUP */
+.leada-mock{background:linear-gradient(162deg,var(--leada-soft),#fff);border:1px solid #d6e6ea;border-radius:22px;padding:22px;min-height:300px;display:flex;flex-direction:column;gap:12px;box-shadow:0 34px 64px -36px rgba(6,32,111,.32)}
+.leada-mock .mhead{display:flex;align-items:center;gap:11px;padding-bottom:13px;border-bottom:1px solid #e0edf0;margin-bottom:4px}
+.leada-mock .mdot{width:32px;height:32px;border-radius:50%;flex:none;background:conic-gradient(from 0deg,#ff2d2d,#ff9a00,#ffe600,#3dff5e,#00e5ff,#2b6bff,#9b3dff,#ff3df0,#ff2d2d);animation:leadahue 11s linear infinite}
+.leada-mock .mhead b{font-size:.96rem;color:var(--ink);line-height:1.1}
+.leada-mock .mhead small{display:block;font-size:.72rem;color:var(--muted)}
+.leada-mock .bubble{background:#fff;border:1px solid #e3edf0;border-radius:14px;padding:10px 13px;font-size:.84rem;color:var(--ink-soft);line-height:1.45;max-width:90%;align-self:flex-start}
+.leada-mock .bubble.me{align-self:flex-end;background:var(--leada);color:#fff;border-color:var(--leada)}
+.leada-mock .mbar{margin-top:auto;padding-top:6px}
+.leada-mock .mbar .lbl{font-size:.72rem;color:var(--muted);margin-bottom:7px;display:flex;justify-content:space-between;gap:10px}
+.leada-mock .mbar .lbl b{color:var(--leada-d);font-weight:600}
+.leada-mock .track{height:7px;border-radius:99px;background:#e3edf0;overflow:hidden}
+.leada-mock .track i{display:block;height:100%;width:68%;background:var(--leada);border-radius:99px}
+/* B2B/B2C TAGS auf Karten */
+.ctag{display:inline-block;font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;padding:3px 9px;border-radius:99px;margin-bottom:10px}
+.ctag.b2c{background:var(--leada-soft);color:var(--leada-d)}
+.ctag.b2b{background:var(--accent-soft);color:var(--accent)}
+/* ORIENTIERUNGSBLOCK */
+.orient{background:var(--sand);border-radius:16px;padding:26px 28px}
+.orient h3{font-size:1.1rem;margin-bottom:16px}
+.orient .orow{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:680px){.orient .orow{grid-template-columns:1fr}}
+.orient .oc{font-size:.9rem;color:var(--ink-soft)}
+.orient .oc b{display:block;color:var(--ink);margin-bottom:3px;font-size:.82rem}
+.orient .oc a{font-weight:600;border-bottom:1px solid var(--accent);padding-bottom:1px}
+/* KONTAKT MAP/ADRESSE */
+.cmap{display:block;margin-top:18px;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.cmap img{width:100%;height:auto;display:block}
+.addrline{font-style:normal;color:var(--ink);line-height:1.6}
