@@ -65,7 +65,7 @@
  <div class="reco" id="reco"><div class="rt">Especially relevant for you</div><div class="rlinks" id="recoLinks"></div></div>
 </div></section><section class="kpiband" id="kpis"><div class="wrap">
  <div class="kpi"><div class="num">25 years</div><div class="lab">of experience in leadership &amp; change &ndash; since 2001</div></div>
- <div class="kpi"><div class="num">1,200+</div><div class="lab">leaders developed</div></div>
+ <div class="kpi"><div class="num">25,000+</div><div class="lab">leaders supported</div></div>
  <div class="kpi"><div class="num">46</div><div class="lab">trainers across 5 languages</div></div>
  <div class="kpi"><div class="num">40+</div><div class="lab">corporates &amp; mid-sized companies &ndash; from BMW &amp; Lufthansa to the public sector</div></div>
 </div></section><div class="rule"></div><section id="purpose"><div class="wrap"><div class="purpose">
@@ -139,9 +139,9 @@ function render(){
  else if(curP){sub=personas[curP].sub;}else if(tSel.length){sub=(tSel.length===1?tSel[0].sub:"In focus: "+labels+".")+" Optionally choose your role as well.";}else{sub=def.sub;}
  cta=curP?personas[curP].cta:tSel.length?(tSel.length===1?tSel[0].cta:"Show matching offers"):def.cta;
  chips=tSel.length?curT.map(t=>themes[t].label):curP?personas[curP].chips:def.chips;
- if(!curP&&!tSel.length){note="<b>Your page in 10&nbsp;seconds.</b> Choose your role &ndash; Leada tailors the headline, examples, testimonials and contact to you.";}
+ if(!curP&&!tSel.length){note="";}
  else{const parts=[];if(curP)parts.push("Role: "+personas[curP].label);if(tSel.length)parts.push("Topics: "+labels);note="<b>Your selection</b> ("+parts.join(" &middot; ")+") &ndash; change or clear it any time.<button class='resetb' id='reset2'>Reset</button>";}
- $("autonote").innerHTML=(!curP&&!tSel.length?"&#10024; ":"&#10003; ")+note;
+ var _an=$("autonote");if(note){_an.innerHTML="&#10003; "+note;_an.style.display="";}else{_an.innerHTML="";_an.style.display="none";}
  $("heroHl").innerHTML=hl;$("heroSub").innerHTML=sub;$("heroCta").innerHTML=cta;
  $("heroChips").innerHTML=chips.map(function(x){var h={"Leadership":"leistungen/leadership.html","Change":"leistungen/change.html","Collaboration":"leistungen/collaboration.html","AI &amp; Digital":"leistungen/digitale-loesungen.html"}[x];return h?'<a class="chip chip-link" href="'+h+'">'+x+'</a>':'<span class="chip">'+x+'</span>';}).join('');
  const hero=$("hero");hero.classList.remove('flash');void hero.offsetWidth;hero.classList.add('flash');

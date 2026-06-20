@@ -65,7 +65,7 @@
  <div class="reco" id="reco"><div class="rt">F&uuml;r Sie besonders relevant</div><div class="rlinks" id="recoLinks"></div></div>
 </div></section><section class="kpiband" id="kpis"><div class="wrap">
  <div class="kpi"><div class="num">25 Jahre</div><div class="lab">Erfahrung in Leadership &amp; Change &ndash; seit 2001</div></div>
- <div class="kpi"><div class="num">1.200+</div><div class="lab">entwickelte F&uuml;hrungskr&auml;fte</div></div>
+ <div class="kpi"><div class="num">25.000+</div><div class="lab">begleitete F&uuml;hrungskr&auml;fte</div></div>
  <div class="kpi"><div class="num">46</div><div class="lab">Trainer:innen in 5 Sprachen</div></div>
  <div class="kpi"><div class="num">40+</div><div class="lab">Konzerne &amp; Mittelst&auml;ndler &ndash; von BMW &amp; Lufthansa bis zur &ouml;ffentlichen Hand</div></div>
 </div></section><div class="rule"></div><section id="purpose"><div class="wrap"><div class="purpose">
@@ -139,9 +139,9 @@ function render(){
  else if(curP){sub=personas[curP].sub;}else if(tSel.length){sub=(tSel.length===1?tSel[0].sub:"Im Fokus: "+labels+".")+" W&auml;hlen Sie optional auch Ihre Rolle.";}else{sub=def.sub;}
  cta=curP?personas[curP].cta:tSel.length?(tSel.length===1?tSel[0].cta:"Passende Angebote zeigen"):def.cta;
  chips=tSel.length?curT.map(t=>themes[t].label):curP?personas[curP].chips:def.chips;
- if(!curP&&!tSel.length){note="<b>In 10&nbsp;Sekunden zu Ihrer Seite.</b> W&auml;hlen Sie Ihre Rolle &ndash; Leada richtet Headline, Beispiele, Testimonials und Ansprechpartner auf Sie aus.";}
+ if(!curP&&!tSel.length){note="";}
  else{const parts=[];if(curP)parts.push("Rolle: "+personas[curP].label);if(tSel.length)parts.push("Themen: "+labels);note="<b>Ihre Auswahl</b> ("+parts.join(" &middot; ")+") &ndash; jederzeit &auml;nder- oder abw&auml;hlbar.<button class='resetb' id='reset2'>Zur&uuml;cksetzen</button>";}
- $("autonote").innerHTML=(!curP&&!tSel.length?"&#10024; ":"&#10003; ")+note;
+ var _an=$("autonote");if(note){_an.innerHTML="&#10003; "+note;_an.style.display="";}else{_an.innerHTML="";_an.style.display="none";}
  $("heroHl").innerHTML=hl;$("heroSub").innerHTML=sub;$("heroCta").innerHTML=cta;
  $("heroChips").innerHTML=chips.map(function(x){var h={"Leadership":"leistungen/leadership.html","Change":"leistungen/change.html","Collaboration":"leistungen/collaboration.html","AI &amp; Digital":"leistungen/digitale-loesungen.html"}[x];return h?'<a class="chip chip-link" href="'+h+'">'+x+'</a>':'<span class="chip">'+x+'</span>';}).join('');
  const hero=$("hero");hero.classList.remove('flash');void hero.offsetWidth;hero.classList.add('flash');
