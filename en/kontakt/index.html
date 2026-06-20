@@ -1,7 +1,7 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contact &ndash; SYNK GROUP</title><link rel="stylesheet" href="../assets/site.css"></head><body><header class="nav"><div class="nav-inner">
-  <a class="logo" href="../index.html"><img class="brand-logo" src="https://images.squarespace-cdn.com/content/v1/61f80fa104b1e2560c5e3955/3bc7f034-7236-4edd-b753-8cff614dcb4f/Screenshot+%281123%29-Photoroom.png" alt="SYNK GROUP"></a>
-  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
-  <nav class="main" id="mainnav">
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contact &ndash; SYNK GROUP</title><link rel="stylesheet" href="../assets/site.css"></head><body><a class="skip" href="#main">Skip to content</a><header class="nav"><div class="nav-inner">
+  <a class="logo" href="../index.html"><img class="brand-logo" src="https://images.squarespace-cdn.com/content/v1/61f80fa104b1e2560c5e3955/3bc7f034-7236-4edd-b753-8cff614dcb4f/Screenshot+%281123%29-Photoroom.png" alt="SYNK GROUP &ndash; Home"></a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mainnav"><span></span><span></span><span></span></button>
+  <nav class="main" id="mainnav" aria-label="Main navigation">
     <div class="nav-item"><a href="../about/index.html">About us <span class="caret">&#9662;</span></a>
       <div class="dropdown">
         <a href="../about/wer-wir-sind.html">Who we are</a>
@@ -36,7 +36,36 @@
       </div></div>
     <div class="nav-item"><a class="nav-cta" href="../kontakt/index.html">Contact</a></div>
     <a class="lang" href="../../kontakt/index.html" hreflang="de" title="Zur deutschen Version">DE</a>
-  </nav></div></header><section class="page-hero"><div class="wrap"><div class="crumbs"><a href="../index.html">Home</a> &rsaquo; <span>Contact</span></div><div class="eyebrow">Contact</div><h1>Let&rsquo;s talk.</h1><p class="lead">Not in the mood for working from home? Come and visit us in Frankfurt &ndash; or simply drop us a line.</p></div></section><figure class="bigimage" style="margin:0"><img src="https://images.squarespace-cdn.com/content/v1/61f80fa104b1e2560c5e3955/38680fac-711b-4009-98a4-f58baecba61b/Fun.jpg" alt="Contact SYNK GROUP" loading="lazy"><figcaption>We look forward to hearing from you.</figcaption></figure><section><div class="wrap"><div class="contact"><div class="eyebrow">Let&rsquo;s SYNK</div><h2>How to reach us</h2><p>Whether information, inspiration or tailored consulting &ndash; we are just one conversation away. Write to us or give us a call; we respond within 24&nbsp;hours.</p><div class="crow"><div><b>Email</b><a href="mailto:office@synk-group.com">office@synk-group.com</a></div><div><b>Phone</b><a href="tel:+496966966700">+49 (0) 69 669 667 00</a></div><div><b>Office</b><span class="addrline">SYNK GROUP GmbH &amp; Co. KG<br>Untermainkai 20<br>60329 Frankfurt am Main</span><br><a class="link" style="font-size:.82rem" href="https://maps.google.com/?q=Untermainkai+20,+60329+Frankfurt+am+Main" target="_blank" rel="noopener">View on the map &rsaquo;</a></div></div><a class="btn btn-primary" href="mailto:office@synk-group.com">Write to us</a></div></div></section><footer class="site"><div class="wrap">
+  </nav></div></header><main id="main"><section class="page-hero"><div class="wrap"><div class="crumbs"><a href="../index.html">Home</a> &rsaquo; <span>Contact</span></div><div class="eyebrow">Contact</div><h1>Let&rsquo;s talk.</h1><p class="lead">Not in the mood for working from home? Come and visit us in Frankfurt &ndash; or simply drop us a line.</p></div></section><figure class="bigimage" style="margin:0"><img src="https://images.squarespace-cdn.com/content/v1/61f80fa104b1e2560c5e3955/38680fac-711b-4009-98a4-f58baecba61b/Fun.jpg" alt="Contact SYNK GROUP" loading="lazy"><figcaption>We look forward to hearing from you.</figcaption></figure><section><div class="wrap"><div class="contact-grid">
+<div><div class="eyebrow">Let&rsquo;s SYNK</div><h2>Send an enquiry</h2><p style="color:var(--ink-soft)">Tell us briefly what you&rsquo;re working on &ndash; we&rsquo;ll get back to you within 24&nbsp;hours with concrete next steps.</p>
+<form class="cform" id="cform" novalidate>
+ <div class="frow">
+  <label>Name <span class="reqhint">*</span><input type="text" name="name" autocomplete="name" required></label>
+  <label>Email <span class="reqhint">*</span><input type="email" name="email" autocomplete="email" required></label>
+ </div>
+ <div class="frow">
+  <label>Company<input type="text" name="firma" autocomplete="organization"></label>
+  <label for="anliegen">Your enquiry<select name="anliegen" id="anliegen">
+   <option>Consulting enquiry</option>
+   <option>Qualification / training</option>
+   <option>Leada for my company (demo)</option>
+   <option>Work with us as a trainer / partner</option>
+   <option>Press / media</option>
+   <option>Other</option>
+  </select></label>
+ </div>
+ <label>Message<textarea name="nachricht" rows="4"></textarea></label>
+ <button type="submit" class="btn btn-primary">Send enquiry</button>
+ <p class="fnote">On submit, your email client opens with a pre-filled message to office@synk-group.com. <span class="reqhint">* required</span></p>
+</form></div>
+<div><div class="eyebrow">Direct</div><h2 style="font-size:1.4rem">How to reach us</h2>
+<div class="crow" style="flex-direction:column;gap:22px;margin-top:24px">
+ <div><b>Email</b><a href="mailto:office@synk-group.com">office@synk-group.com</a></div>
+ <div><b>Phone</b><a href="tel:+496966966700">+49 (0) 69 669 667 00</a></div>
+ <div><b>Office</b><span class="addrline">SYNK GROUP GmbH &amp; Co. KG<br>Untermainkai 20<br>60329 Frankfurt am Main</span><br><a class="link" style="font-size:.82rem" href="https://maps.google.com/?q=Untermainkai+20,+60329+Frankfurt+am+Main" target="_blank" rel="noopener">View on the map &rsaquo;</a></div>
+</div></div>
+</div></div></section>
+<script>(function(){var f=document.getElementById('cform');if(!f)return;var el=function(n){return f.elements[n];};var thema=new URLSearchParams(location.search).get('thema');if(thema&&el('nachricht')){el('nachricht').value='My interest: '+thema+'\n\n';}f.addEventListener('submit',function(e){e.preventDefault();var v=function(n){return el(n)?el(n).value.trim():'';};if(!v('name')||!v('email')){alert('Please provide your name and email.');return;}var a=v('anliegen')||'Enquiry';var subj='['+a+'] Enquiry via the website'+(thema?(' – '+thema):'');var body='Name: '+v('name')+'\nEmail: '+v('email')+'\nCompany: '+v('firma')+'\nEnquiry: '+a+(thema?('\nTopic: '+thema):'')+'\n\nMessage:\n'+v('nachricht');window.location.href='mailto:office@synk-group.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);});})();</script></main><footer class="site"><div class="wrap">
   <div class="fgrid">
     <div class="fbrand"><b>SYNK GROUP</b><br>Leadership and Change Experts
       <p style="margin-top:12px;max-width:34ch">We develop people &ndash; and thereby companies. For over 25 years.</p></div>
@@ -44,7 +73,7 @@
       <a href="../leistungen/leadership.html">Leadership</a><a href="../leistungen/change.html">Change</a>
       <a href="../leistungen/collaboration.html">Collaboration</a><a href="../leistungen/digitale-loesungen.html">Digital Solutions</a></div>
     <div><h5>Qualification</h5>
-      <a href="../qualifizierung/index.html">Programs</a><a href="https://leada.de" target="_blank" rel="noopener">Leada</a>
+      <a href="../qualifizierung/index.html">Programs</a><a href="https://heyleada.ai" target="_blank" rel="noopener">Leada</a>
       <a href="../wissen/podcast.html">Podcast</a><a href="../kontakt/index.html">Contact</a></div>
     <div><h5>Information</h5>
       <a href="https://www.synk-group.com/impressum" target="_blank" rel="noopener">Imprint</a>
