@@ -15,7 +15,7 @@ h1,h2,h3,h4{margin:0;line-height:1.2;letter-spacing:-.01em;font-weight:700}
 h2{font-size:clamp(1.7rem,3.2vw,2.4rem)}
 p{margin:0 0 1em}
 a{color:var(--petrol);text-decoration:none}
-section{padding:128px 0}
+section{padding:100px 0}
 .center{text-align:center}
 .eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:700;color:var(--accent);margin-bottom:1.3rem}
 .sec-head{max-width:80ch;margin:0 0 64px}
