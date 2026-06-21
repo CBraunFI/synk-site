@@ -278,7 +278,6 @@ footer.site a{display:block;color:var(--ink-soft);padding:5px 0}
 footer.site a:hover{color:var(--petrol)}
 .fbrand b{color:var(--ink);font-size:1.05rem;letter-spacing:.03em}
 .fbar{border-top:1px solid var(--line);margin-top:42px;padding-top:22px;font-size:.78rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-.proto-flag{position:fixed;bottom:14px;left:14px;z-index:200;background:var(--ink);color:#fff;font-size:.7rem;padding:6px 13px;border-radius:999px;opacity:.8}
 /* KPI BAND */
 .kpiband{background:var(--accent);color:#fff;padding:0}
 .kpiband .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px 30px;padding-top:46px;padding-bottom:46px}
