@@ -38,7 +38,11 @@
     <a class="lang" href="../en/kontakt/index.html" hreflang="en" title="Switch to English">EN</a>
   </nav></div></header><main id="main"><section class="page-hero"><div class="wrap"><div class="crumbs"><a href="../index.html">Home</a> &rsaquo; <span>Kontakt</span></div><div class="eyebrow">Kontakt</div><h1>Sprechen wir.</h1><p class="lead">Keine Lust auf Homeoffice? Besuchen Sie uns in Frankfurt &ndash; oder schreiben Sie uns einfach.</p></div></section><figure class="bigimage" style="margin:0"><img src="https://images.squarespace-cdn.com/content/v1/61f80fa104b1e2560c5e3955/38680fac-711b-4009-98a4-f58baecba61b/Fun.jpg" alt="Kontakt SYNK GROUP" loading="lazy"><figcaption>Wir freuen uns auf Sie.</figcaption></figure><section><div class="wrap"><div class="contact-grid">
 <div><div class="eyebrow">Let&rsquo;s SYNK</div><h2>Anfrage senden</h2><p style="color:var(--ink-soft)">Erz&auml;hlen Sie uns kurz, woran Sie arbeiten &ndash; wir melden uns innerhalb von 24&nbsp;Stunden mit konkreten n&auml;chsten Schritten.</p>
-<form class="cform" id="cform" novalidate>
+<form class="cform" id="cform" action="https://api.web3forms.com/submit" method="POST" novalidate>
+ <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY_HIER_EINTRAGEN">
+ <input type="hidden" name="subject" value="Neue Anfrage &uuml;ber synk-group.com">
+ <input type="hidden" name="from_name" value="SYNK GROUP Website">
+ <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
  <div class="frow">
   <label>Name <span class="reqhint">*</span><input type="text" name="name" autocomplete="name" required></label>
   <label>E-Mail <span class="reqhint">*</span><input type="email" name="email" autocomplete="email" required></label>
@@ -56,7 +60,7 @@
  </div>
  <label>Nachricht<textarea name="nachricht" rows="4"></textarea></label>
  <button type="submit" class="btn btn-primary">Anfrage senden</button>
- <p class="fnote">Mit dem Absenden &ouml;ffnet sich Ihr E-Mail-Programm mit vorausgef&uuml;llter Nachricht an office@synk-group.com. <span class="reqhint">* Pflichtfeld</span></p>
+ <p class="fnote" id="fstatus" role="status" aria-live="polite">Wir melden uns innerhalb von 24&nbsp;Stunden &ndash; von einem Menschen. <span class="reqhint">* Pflichtfeld</span></p>
 </form></div>
 <div><div class="eyebrow">Direkt</div><h2 style="font-size:1.4rem">So erreichen Sie uns</h2>
 <div class="crow" style="flex-direction:column;gap:22px;margin-top:24px">
@@ -65,10 +69,10 @@
  <div><b>Office</b><span class="addrline">SYNK GROUP GmbH &amp; Co. KG<br>Untermainkai 20<br>60329 Frankfurt am Main</span><br><a class="link" style="font-size:.82rem" href="https://maps.google.com/?q=Untermainkai+20,+60329+Frankfurt+am+Main" target="_blank" rel="noopener">Auf der Karte ansehen &rsaquo;</a></div>
 </div></div>
 </div></div></section>
-<script>(function(){var f=document.getElementById('cform');if(!f)return;var el=function(n){return f.elements[n];};var thema=new URLSearchParams(location.search).get('thema');if(thema&&el('nachricht')){el('nachricht').value='Mein Interesse: '+thema+'\n\n';}f.addEventListener('submit',function(e){e.preventDefault();var v=function(n){return el(n)?el(n).value.trim():'';};if(!v('name')||!v('email')){alert('Bitte Name und E-Mail angeben.');return;}var a=v('anliegen')||'Anfrage';var subj='['+a+'] Anfrage über die Website'+(thema?(' – '+thema):'');var body='Name: '+v('name')+'\nE-Mail: '+v('email')+'\nUnternehmen: '+v('firma')+'\nAnliegen: '+a+(thema?('\nThema: '+thema):'')+'\n\nNachricht:\n'+v('nachricht');window.location.href='mailto:office@synk-group.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);});})();</script></main><footer class="site"><div class="wrap">
+<script>(function(){var f=document.getElementById('cform');if(!f)return;var el=function(n){return f.elements[n];};var status=document.getElementById('fstatus');var thema=new URLSearchParams(location.search).get('thema');if(thema&&el('nachricht')&&!el('nachricht').value){el('nachricht').value='Mein Interesse: '+thema+'\n\n';}var KEY=el('access_key')?el('access_key').value:'';var PLACEHOLDER=KEY.indexOf('HIER_EINTRAGEN')>-1||KEY==='';function mailtoFallback(v){var a=v('anliegen')||'Anfrage';var subj='['+a+'] Anfrage über die Website'+(thema?(' – '+thema):'');var body='Name: '+v('name')+'\nE-Mail: '+v('email')+'\nUnternehmen: '+v('firma')+'\nAnliegen: '+a+(thema?('\nThema: '+thema):'')+'\n\nNachricht:\n'+v('nachricht');window.location.href='mailto:office@synk-group.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);}f.addEventListener('submit',function(e){e.preventDefault();var v=function(n){return el(n)?el(n).value.trim():'';};if(!v('name')||!v('email')){status.textContent='Bitte Name und E-Mail angeben.';el('name').focus();return;}if(PLACEHOLDER){mailtoFallback(v);return;}var btn=f.querySelector('button[type=submit]');btn.disabled=true;status.textContent='Wird gesendet …';fetch('https://api.web3forms.com/submit',{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}}).then(function(r){return r.json();}).then(function(j){if(j.success){window.location.href='danke.html';}else{throw new Error(j.message||'Fehler');}}).catch(function(){btn.disabled=false;status.innerHTML='Senden fehlgeschlagen. Bitte direkt an <a href="mailto:office@synk-group.com">office@synk-group.com</a> schreiben.';});});})();</script></main><footer class="site"><div class="wrap">
   <div class="fgrid">
     <div class="fbrand"><b>SYNK GROUP</b><br>Leadership and Change Experts
-      <p style="margin-top:12px;max-width:34ch">Wir entwickeln Menschen &ndash; und damit Unternehmen. Seit &uuml;ber 25 Jahren.</p></div>
+      <p style="margin-top:12px;max-width:34ch">Wir entwickeln Menschen &ndash; und damit Unternehmen. Seit &uuml;ber 25 Jahren.</p><p style="margin-top:10px"><a href="tel:+496966966700">+49 (0) 69 669 667 00</a></p></div>
     <div><h5>Leistungen</h5>
       <a href="../leistungen/leadership.html">Leadership</a><a href="../leistungen/change.html">Change</a>
       <a href="../leistungen/collaboration.html">Collaboration</a><a href="../leistungen/digitale-loesungen.html">Digitale L&ouml;sungen</a></div>
