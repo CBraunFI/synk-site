@@ -13,4 +13,6 @@ Nach der P0+P1-Umsetzungsrunde (Persona-Feedback, 15 Personas) sind zwei Dinge b
 
 **Why:** Statische GitHub-Pages-Site ohne Backend — echtes Formular nur über Drittdienst möglich; Embed-URL nicht 100 % verifizierbar ohne Live-Test.
 
+**Bewusst noch extern (synk-group.com):** Rechtstexte (Datenschutz, AGB, KI-Einsatz, Barrierefreiheit) — juristische Texte, dürfen nicht erfunden werden; Projektbericht-**PDFs** (Downloads); Programm-Buchung „Termine & Anmeldung" (echtes Booking, interner „Beratung anfragen"-Pfad existiert daneben). Native gebaut wurden: **Team** (`about/team.html`), **25 Jahre / Forum** (`about/25-jahre.html`), **Bücher & Artikel** (`wissen/buecher-artikel.html`) — je DE+EN, in Nav/Body/Such-Index verdrahtet.
+
 **How to apply:** Beide Punkte vor dem nächsten Go-Live/Review abhaken. P2 ist umgesetzt (Projekte-Filter, Programm-Vergleichstabelle, FAQ-Akkordeons, Leada-Navigator mit Auto-Scroll/Toast). Aus P3 umgesetzt: clientseitige Suche (in `site.js`), Newsletter (Web3Forms), Mobile-CSS-Härtung. **Echt offen / asset-/account-abhängig:** Calendly-Terminbuchung (braucht Konto), Whitepaper-Lead-Magnet (braucht PDF), echte/diverse Fotos, sowie eine reale Geräte-QA (iOS Safari / Android Chrome) vor Go-Live.

@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var DE=[
    {u:'index.html',t:'Startseite',k:'home start leadership change human empowerment'},
    {u:'about/wer-wir-sind.html',t:'Wer wir sind',k:'ueber uns about purpose methode methodik warum synk haltung'},
+   {u:'about/team.html',t:'Team',k:'team geschaeftsfuehrung gesellschafter trainer netzwerk menschen krauss krauter kuebler'},
+   {u:'about/25-jahre.html',t:'25 Jahre SYNK',k:'25 jahre jubilaeum forum zukunft fuehren 2001 event spark'},
    {u:'about/aktuelles.html',t:'Aktuelles &amp; Veranstaltungen',k:'events termine forum zukunft fuehren news'},
    {u:'about/karriere.html',t:'Karriere',k:'jobs trainer associate freie mitarbeit bewerbung festanstellung'},
    {u:'leistungen/index.html',t:'Leistungen',k:'services beratung training coaching'},
@@ -35,6 +37,7 @@ document.addEventListener('DOMContentLoaded',function(){
    {u:'qualifizierung/young-women-leadership.html',t:'Young Women Leadership',k:'frauen women stipendium mentoring diversity'},
    {u:'qualifizierung/e-learning-ki.html',t:'E-Learning KI',k:'ki ai grundlagen eu ai act onboarding zertifikat'},
    {u:'wissen/leada.html',t:'Leada App',k:'leada ki app assistent datenschutz technik dsgvo'},
+   {u:'wissen/buecher-artikel.html',t:'B&uuml;cher &amp; Artikel',k:'buecher artikel publikationen agile power guide fuehrung 2030 fachartikel'},
    {u:'wissen/podcast.html',t:'Podcast &bdquo;Every Day Counts&ldquo;',k:'podcast every day counts hoeren folgen'},
    {u:'projekte/index.html',t:'Projekte &amp; Kunden',k:'referenzen cases kunden filter impact wirkung'},
    {u:'projekte/bayer.html',t:'Bayer',k:'bayer lessons learned pharma'},
@@ -47,6 +50,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var EN=[
    {u:'index.html',t:'Home',k:'home leadership change human empowerment'},
    {u:'about/wer-wir-sind.html',t:'Who we are',k:'about purpose method why synk attitude'},
+   {u:'about/team.html',t:'Team',k:'team management partners trainers network people'},
+   {u:'about/25-jahre.html',t:'25 Years of SYNK',k:'25 years anniversary forum future leadership 2001 event spark'},
    {u:'about/aktuelles.html',t:'News &amp; Events',k:'events forum future leadership news'},
    {u:'about/karriere.html',t:'Careers',k:'jobs trainer associate freelance application'},
    {u:'leistungen/index.html',t:'Services',k:'services consulting training coaching'},
@@ -62,6 +67,7 @@ document.addEventListener('DOMContentLoaded',function(){
    {u:'qualifizierung/young-women-leadership.html',t:'Young Women Leadership',k:'women scholarship mentoring diversity'},
    {u:'qualifizierung/e-learning-ki.html',t:'E-Learning AI',k:'ai fundamentals eu ai act onboarding certificate'},
    {u:'wissen/leada.html',t:'Leada App',k:'leada ai app assistant data protection gdpr'},
+   {u:'wissen/buecher-artikel.html',t:'Books &amp; Articles',k:'books articles publications agile power guide fuehrung 2030'},
    {u:'wissen/podcast.html',t:'Podcast &bdquo;Every Day Counts&ldquo;',k:'podcast listen episodes'},
    {u:'projekte/index.html',t:'Projects &amp; Clients',k:'references cases clients filter impact'},
    {u:'projekte/bayer.html',t:'Bayer',k:'bayer lessons learned'},
